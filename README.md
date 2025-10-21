@@ -2,6 +2,7 @@
 # ☁️ Anotações do Curso AWS
 
 Este repositório contém minhas **anotações, resumos e códigos práticos** do curso *Santander Code Girls - 2025*.  
+
 O objetivo é reunir tudo o que aprendo sobre os principais serviços da AWS e práticas recomendadas para o uso de recursos em nuvem.
 ---
 
