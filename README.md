@@ -26,10 +26,9 @@ O objetivo é reunir tudo o que aprendo sobre os principais serviços da AWS e p
 ---
 ## 🚀 Desafios do Curso
 
-| Desafio | Status |
-|Criar diagrama AWS | OK | [Meu diagrama S3 + Lambda](https://github.com/nicolemaximiano/codegirls-santander/blob/main/computacao-na-nuvem-com-ec2/imagens/diagrama_s3_lambda.drawio)
-
----
+| Desafio             | Status | Link |
+|--------------------|--------|------|
+| Criar diagrama AWS  | OK     | [Meu diagrama S3 + Lambda](https://github.com/nicolemaximiano/codegirls-santander/blob/main/computacao-na-nuvem-com-ec2/imagens/diagrama_s3_lambda.drawio) |
 
 ## 📌 Observações
 
