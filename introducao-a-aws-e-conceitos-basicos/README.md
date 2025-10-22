@@ -17,12 +17,9 @@ Este módulo apresenta os **fundamentos da AWS**, incluindo conceitos de **nuvem
 
 | Tema | Descrição |
 |------|------------|
-| **AWS CLI** | Instalação, configuração e primeiros comandos (`aws configure`, `aws s3 ls`, etc.) |
+| **AWS CLI** | Instalação, configuração e primeiros comandos |
 | **IAM** | Criação de usuários, grupos e políticas personalizadas |
 | **Automação IAM** | Scripts em Bash para criação automatizada de usuários |
+| **Controle de Custos e alertas de orçamento** | Criação de orçamento na AWS e configuração para alertas por e-mail com objetivo de monitorar gastos |
 
----
 
-## 🖼️ Imagens e Prints
-
-A pasta [`imagens/`](./imagens) contém capturas de tela das configurações e práticas realizadas neste módulo.
