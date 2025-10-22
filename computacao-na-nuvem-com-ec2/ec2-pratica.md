@@ -1,9 +1,10 @@
-🧩 Resumo da Aula — Computação na Nuvem com Amazon EC2
+# 🧩 Resumo da Aula — Computação na Nuvem com Amazon EC2
+
 ☁️ O que é o EC2?
 
 O Amazon EC2 (Elastic Compute Cloud) é um serviço de computação em nuvem da AWS que oferece máquinas virtuais (instâncias) configuráveis com CPU, memória, armazenamento e rede.
 Faz parte do modelo IaaS (Infraestrutura como Serviço), onde o usuário é responsável por gerenciar aplicações, dados e conexões.
-
+---
 🎯 Escolhendo a Instância EC2 Correta
 
 As instâncias são classificadas conforme o tipo de carga de trabalho:
@@ -46,3 +47,4 @@ Formas de adquirir instâncias conforme seu uso e orçamento:
 - O EC2 oferece flexibilidade e escalabilidade para qualquer tipo de aplicação.
 - A escolha correta da instância e do modelo de compra impacta diretamente no custo e desempenho.
 - Monitorar, ajustar e desligar recursos ociosos são práticas essenciais de otimização em nuvem.
+
