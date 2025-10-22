@@ -1,53 +1,48 @@
-☁️💻 Computação na Nuvem com Amazon EC2
+🧩 Resumo da Aula — Computação na Nuvem com Amazon EC2
+☁️ O que é o EC2?
 
-O módulo foca em Computação na Nuvem com EC2, Armazenamento na Nuvem, Gerenciamento de Instâncias EC2 e Otimização de Recursos na AWS.
+O Amazon EC2 (Elastic Compute Cloud) é um serviço de computação em nuvem da AWS que oferece máquinas virtuais (instâncias) configuráveis com CPU, memória, armazenamento e rede.
+Faz parte do modelo IaaS (Infraestrutura como Serviço), onde o usuário é responsável por gerenciar aplicações, dados e conexões.
 
-🖥️ 1. O que são Instâncias Amazon EC2?
+🎯 Escolhendo a Instância EC2 Correta
 
-O Amazon EC2 (Elastic Compute Cloud) fornece máquinas virtuais na nuvem da AWS, oferecendo capacidade de computação escalável e flexível.
-As instâncias podem executar Windows ou Linux e são compostas por:
-
-💡 CPU, Memória, Disco, Rede e Sistema Operacional
-
-No modelo de nuvem, o EC2 é classificado como IaaS (Infraestrutura como Serviço).
-Nossa responsabilidade inclui os aplicativos, dados e conexões utilizados nas instâncias.
-
-🎯 2. Escolhendo a Instância EC2 Correta
-
-A escolha da instância correta é crucial para garantir eficiência, escalabilidade e economia nos gastos com nuvem.
-As instâncias são categorizadas conforme seu propósito:
-
-| 🏷️ **Categoria**         | 🧠 **Descrição**                                                                                                                                   | ⚙️ **Exemplos (Séries)** |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| **General Purpose**       | Servidores de aplicação principal e propósito geral. Ex: ARM based core e custom silicon; Web servers pequenos e DBs pequenos                      | A1, T2, M4               |
-| **Compute Optimised**     | Otimizadas para aplicações intensivas em CPU e bancos de dados (DBs)                                                                               | C4                       |
-| **Memory Optimised**      | Otimizadas para aplicações e bancos de dados (DBs) intensivos em memória (RAM). Ex: Xtreme RAM para SAP/Spark; High Compute e High Memory – Gaming | R4, X1, z1d              |
-| **Accelerated Computing** | Otimizadas para processamento, Machine Learning, gráficos intensivos, vídeo, streaming e hardware acceleration                                     | P2, G3, F1               |
-| **Storage Optimised**     | Otimizadas para alto throughput de disco, clusters de Big Data, IOPS e Data Warehousing                                                            | H1, I3, D2               |
----
-
-💸 3. Otimização de Recursos na AWS
-
-Otimizar recursos na AWS está diretamente ligado à redução de custos e melhoria de desempenho.
-
-| ⚙️ **Estratégia de Otimização**                 | 📝 **Descrição**                                                                                                |
-| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Otimização de Custos e Desempenho**           | Melhorar o desempenho do sistema resulta em economia e ganho de eficiência na solução em nuvem.                 |
-| **Desligando Instâncias Não Utilizadas 🛑**     | Em ambientes de desenvolvimento, teste ou treinamento, desligar instâncias fora do horário de uso reduz custos. |
-| **Remover Recursos Ociosos/Não Utilizados 🗑️** | Recursos ociosos continuam gerando gastos — como alugar um carro e deixá-lo na garagem.                         |
-| **Escalabilidade (Horizontal e Vertical) 📈📉** | Ajustar os recursos conforme a demanda — pode ser feito de forma manual ou automática.                          |
-| **Escalabilidade Vertical**                     | Aumenta ou reduz capacidade em um mesmo nó (vCPUs, memória, storage, rede).                                     |
-| **Escalabilidade Horizontal**                   | Adiciona novos recursos (ex: novas instâncias) para suportar o aumento da carga.                                |
+As instâncias são classificadas conforme o tipo de carga de trabalho:
+| Categoria                 | Foco Principal                                       | Exemplos    |
+| ------------------------- | ---------------------------------------------------- | ----------- |
+| **General Purpose**       | Uso geral (web servers, pequenos bancos de dados)    | A1, T2, M4  |
+| **Compute Optimised**     | Alto desempenho de CPU                               | C4          |
+| **Memory Optimised**      | Aplicações que exigem muita memória (ex: SAP, Spark) | R4, X1, z1d |
+| **Accelerated Computing** | Machine Learning, gráficos, vídeo, IA                | P2, G3, F1  |
+| **Storage Optimised**     | Alto throughput e armazenamento intenso              | H1, I3, D2  |
 
 ---
 
-🛒 4. Tipos de Compra de Instâncias (Para Otimização)
+💸 Otimização de Recursos na AWS
 
-Existem diferentes formas de adquirir instâncias EC2, cada uma com vantagens e desvantagens relacionadas a custo, disponibilidade e flexibilidade:
+Otimizar recursos significa melhorar o desempenho e reduzir custos.
+Principais práticas:
 
-| 💳 **Tipo de Compra**            | ✅ **Vantagens**                     | ⚠️ **Desvantagens / Recomendação**                                                                                                           |
-| -------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Sob Demanda (On-Demand) ⏳** | Pagamento a uma taxa fixa por hora. | Ideal para cargas de trabalho irregulares de curto prazo que não podem ser interrompidas. Também recomendadas para testes e desenvolvimento. |
-| **2. Instâncias Reservadas 💰**  | Mais baratas que as sob demanda.    | Exigem compromisso de uso (pagamento anual). Pouco vantajosas se a instância não for usada frequentemente.                                   |
-| **3. Instâncias Spot ⚡**         | Oferecem descontos de até **90%**.  | Podem ser encerradas pela AWS a qualquer momento, com aviso prévio de 2 minutos.                                                             |
+- Otimizar custos e desempenho → ajustar recursos conforme necessidade.
+- Desligar instâncias não utilizadas → em horários ociosos (noite/fins de semana).
+- Remover recursos ociosos → liberar o que não está sendo usado.
+- Escalabilidade vertical → aumentar ou reduzir capacidade (CPU, RAM, disco).
+- Escalabilidade horizontal → adicionar mais instâncias para suportar maior demanda.
+---
 
+🛒 Tipos de Compra de Instâncias
+
+Formas de adquirir instâncias conforme seu uso e orçamento:
+
+| Tipo                          | Vantagem                         | Recomendado Para                          |
+| ----------------------------- | -------------------------------- | ----------------------------------------- |
+| **Sob Demanda (On-Demand)** ⏳ | Pagamento por hora de uso.       | Testes e cargas de curto prazo.           |
+| **Instâncias Reservadas** 💰  | Mais baratas que as sob demanda. | Uso contínuo e previsível (ex: produção). |
+| **Instâncias Spot** ⚡         | Até **90% mais baratas**.        | Processos que podem ser interrompidos.    |
+
+--- 
+
+🚀 Conclusão
+
+- O EC2 oferece flexibilidade e escalabilidade para qualquer tipo de aplicação.
+- A escolha correta da instância e do modelo de compra impacta diretamente no custo e desempenho.
+- Monitorar, ajustar e desligar recursos ociosos são práticas essenciais de otimização em nuvem.
