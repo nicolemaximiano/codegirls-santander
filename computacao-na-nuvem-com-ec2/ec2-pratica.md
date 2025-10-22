@@ -1,7 +1,7 @@
 # ☁️ Módulo 2 – Computação na Nuvem com EC2  
 
 📚 **Resumo:**  
-Este repositório contém o resumo dos principais tópicos abordados no **Módulo 2 da Formação AWS Cloud Foundations**, com foco em **Computação na Nuvem (EC2)**, **Armazenamento (S3 e EBS)** e **Otimização de Recursos na AWS**.
+Este repositório contém o resumo dos principais tópicos abordados no **Módulo 2, com foco em **Computação na Nuvem (EC2)**, **Armazenamento (S3 e EBS)** e **Otimização de Recursos na AWS**.
 
 ---
 
@@ -138,3 +138,4 @@ O Módulo 2 da Formação **AWS Cloud Foundations** apresenta os conceitos essen
 - 💸 **Otimização de recursos:** redução de custos sem perder desempenho  
 
 ⚡ **A base da nuvem AWS é compreender como escalar, otimizar e gerenciar recursos de forma inteligente e econômica.**
+
